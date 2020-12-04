@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  background-color: black;
+  height: 400vh;
+}
+*{
+ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page{
+  
+  width: 100vw;
+}
+#pageId1{
+  height: 90vh;
+  background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+#pageId2{
+  height: 80vh;
+  background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/ipad.png');
+  background-repeat: no-repeat;
+  background-position: bottom;  
+}
+#pageId3{
+  height: 110vh;
+  background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-signup.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom;  
+}
+
+
+header{  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  
+  
+  width: 100vw;
+}
+.header-top{  
+  background-color: rgba(255, 255, 255, 0);
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  color:grey;
+  font-size: x-large;
+}
+.header-top-scroll{
+  background-color: white;
+  color: black;
+}
+
+
+
+#header-logo{
+  
+}
+#header-menu{
+  display: none;
+}
+#header-mobile-menu{
+
+}
+#header-menu p{
+  margin-left: 20px;
+}
+.mobile-menu p{
+  text-align: left;
+  cursor: pointer;
+}
+.mobile-menu{
+  background-color: whitesmoke;
+  height: 200px;
+  overflow: hidden;
+  transition: all .5s;
+}
+.mobile-menu-hide{
+  height: 0;
+}
+#menu-button{
+  width: 70px;
+  height: 40px;
+
+}
+
+
+@media (min-width: 950px){
+ 
+  #header-menu{
+    display: flex;
+  }
+  #header-mobile-menu{
+    display: none;
+  }
+  .mobile-menu{
+   display: none;
+  }
+}
+@media (max-width:950px){
+  .header-top{
+    background-color: white;
+  color: black;
+  }
+
+}
